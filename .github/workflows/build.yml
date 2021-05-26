@@ -1,0 +1,27 @@
+name: BuildAndDeploy
+
+on:
+  push:
+    branches: [master]
+
+env:
+  version: ${{ github.sha }}
+
+jobs:
+  build-and-push:
+    name: Build and push to Docker
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Docker Build & Push to Docker Hub
+        uses: opspresso/action-docker@master
+        with:
+          args: --docker
+        env:
+          USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKERFILE: 'Dockerfile'
+          IMAGE_NAME: 'k9wallet/k9wallet-website'
+          TAG_NAME: ${{ env.version }}
+          LATEST: 'true'
