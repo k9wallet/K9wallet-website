@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>K9Wallet</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/lightcase.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/simple-line-icons.css">
+	<link rel="stylesheet" href="assets/css/ElegantIcons.css">
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+	<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+
+	<script>
+		anychart.onDocumentReady(function() {
+
+		var data = [
+			{x: "Dev Funds", value: 250000000},
+			{x: "Pre-Sale", value: 400000000},
+			{x: "Liquidity", value: 1150000000},
+			{x: "New Wallet Airdrops", value: 200000000}
+		];
+
+		var chart = anychart.pie();
+
+		chart.title("Token distribution");
+
+		chart.data(data);
+		chart.container('chart_div');
+		chart.draw();
+
+		});
+	</script>
+	
+</head>
+<body data-spy="scroll" data-target=".navbar">
+	<header class="header">
+		<nav class="navbar navbar-expand-lg fixed-top" id="main-nav">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img class="white-logo" src="assets/images/logo.png" alt="">
+					<img class="color-logo" src="assets/images/logo.png" alt="">
+				</a>
+				<button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="main-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="menu-toggle">
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="hamburger-cross">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+				</button>
+				<div class="collapse navbar-collapse order-3 order-lg-2" id="main-nav-collapse">
+					<ul class="navbar-nav ml-auto">
+						
+						<li class="nav-item">
+							<a class="nav-link nav-link-scroll" href="#feature">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-scroll" href="#screenshot">Screenshots</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link nav-link-scroll" href="#timeline">Timeline</a>
+						</li> 
+
+						<li class="nav-item active">
+							<a class="nav-link nav-link-scroll" href="#token">K9 Wallet Token</a>
+						</li> 
+
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+	</header><!-- header -->
+	<section class="home-1-banner main-banner bg-img bg-6" id="banner">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 col-md-7">
+					<div class="banner-content">
+						<div class="ovh">
+							<h2 class="title wow slideInUpBig" data-wow-duration=".65s"  data-wow-delay=".1s">A Wallet for all your pets</h2>
+						</div>
+						<div class="ovh">
+							<span class="sub-title wow slideInUpBig" data-wow-duration=".65s" data-wow-delay=".3s">Introducing the most advanced wallet app for all your pet tokens, the one you always wanted.</span>
+						</div>
+						<div class="btn-wrapper ovh">
+							<a class="btn store-btn fill-style wow slideInUpBig" data-wow-duration=".65s" data-wow-delay=".4s" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="26px"><path fill-rule="evenodd"  fill="rgb(96, 56, 247)" d="M19.618,13.605 L15.283,16.531 L12.240,13.090 L15.570,9.324 L19.618,12.058 C19.857,12.219 20.000,12.508 20.000,12.832 C20.000,13.154 19.857,13.442 19.618,13.605 ZM0.662,-0.003 L10.427,5.850 L14.882,8.859 L11.691,12.469 L0.662,-0.003 ZM-0.000,25.689 L0.010,0.502 L11.142,13.090 L-0.000,25.689 ZM14.596,16.996 L10.443,19.799 L0.824,25.998 L11.691,13.710 L14.596,16.996 Z"/></svg> <span>Google Play</span></a>
+							<a class="btn store-btn wow slideInUpBig" data-wow-duration=".65s" data-wow-delay=".6s"  href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="24px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M18.423,9.825 C17.802,10.691 17.490,11.644 17.490,12.687 C17.490,13.828 17.820,14.856 18.481,15.769 C19.141,16.681 19.897,17.262 20.749,17.510 C20.376,18.662 19.787,19.814 18.983,20.967 C17.749,22.773 16.519,23.675 15.294,23.675 C14.825,23.675 14.155,23.527 13.284,23.233 C12.461,22.938 11.738,22.792 11.116,22.792 C10.532,22.792 9.853,22.943 9.077,23.248 C8.302,23.561 7.671,23.716 7.182,23.716 C5.728,23.716 4.287,22.524 2.861,20.138 C1.454,17.732 0.751,15.414 0.751,13.184 C0.751,11.082 1.292,9.360 2.373,8.014 C3.445,6.687 4.804,6.023 6.450,6.023 C7.139,6.023 7.986,6.162 8.991,6.438 C9.987,6.715 10.647,6.854 10.973,6.854 C11.403,6.854 12.088,6.696 13.026,6.384 C14.002,6.071 14.830,5.913 15.509,5.913 C16.648,5.913 17.667,6.213 18.567,6.811 C19.065,7.143 19.562,7.605 20.060,8.194 C19.304,8.812 18.759,9.355 18.423,9.825 ZM13.600,5.084 C13.083,5.581 12.566,5.913 12.049,6.080 C11.695,6.181 11.197,6.259 10.556,6.314 C10.585,4.940 10.958,3.757 11.676,2.761 C12.384,1.776 13.581,1.093 15.265,0.715 C15.275,0.743 15.287,0.794 15.301,0.867 C15.315,0.941 15.327,0.992 15.337,1.020 C15.337,1.057 15.339,1.102 15.344,1.157 C15.349,1.213 15.351,1.259 15.351,1.297 C15.351,1.858 15.212,2.486 14.935,3.175 C14.648,3.867 14.203,4.503 13.600,5.084 Z"/></svg> <span>App Store</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-3 offset-lg-1 offset-md-2 banner-img-wrapper">
+					<img src="assets/images/chart-iphone.png" class="banner-img-1 wow slideInUpAlt" data-wow-delay=".1s" alt="">
+					<img src="assets/images/home-iphone.png" class="banner-img-2 wow slideInRightAlt" alt="">
+				</div>
+			</div>
+		</div>
+	</section><!-- banner -->
+	<section class="feature">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4">
+					<div class="icon-box style-boxed">
+						<div class="icon-box-icon">
+							<i class="ti-check-box"></i>
+						</div>
+						<div class="icon-box-details">
+							<h3 class="icon-box-title">Premium Quality</h3>
+							<p>Dank Quality! We've been building iOS & Android apps for years</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="icon-box style-boxed">
+						<div class="icon-box-icon">
+							<i class="ti-star"></i>
+						</div>
+						<div class="icon-box-details">
+							<h3 class="icon-box-title">Awesome Design</h3>
+							<p>Design? We winging it, like the pros</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="icon-box style-boxed">
+						<div class="icon-box-icon">
+							<i class="ti-themify-favicon"></i>
+						</div>
+						<div class="icon-box-details">
+							<h3 class="icon-box-title">Dank Mode</h3>
+							<p>aaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaa aaaaaaaaa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- feature -->
+	<section class="about s-padding">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5">
+					<div class="about-content">
+						<h2>Enhance your meme trading experience on the go</h2>
+						<p>Whether you're in the toilet, your brothers wedding, at a bar or a boring Tinder date; you can now check-up on all your meme cryptos without having to resort to several platform gymnastics with terrible mobile UIs.</p>
+					</div>
+				</div>
+				<div class="col-lg-6 offset-lg-1 about-images-wrapper">
+					<img src="assets/images/iphonx.png" class="about-img1 wow slideInRightAlt"  alt="">
+					<img src="assets/images/iphonex-side.png" class="about-img2 wow slideInRightAlt"  data-wow-delay=".2s" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="floating-shapes">
+			<span data-parallax='{"x": 150, "y": -20, "rotateZ":500}'><img src="assets/images/dogelon-small.png" alt=""></span>
+			<span data-parallax='{"x": 250, "y": 150, "rotateZ":500}'><img src="assets/images/shib_logo_header.png" alt=""></span>
+			<span data-parallax='{"x": -180, "y": 80, "rotateY":2000}'><img src="assets/images/gfx-h.png" alt=""></span>
+			<span data-parallax='{"x": -20, "y": 180}'><img src="assets/images/akitadog.png" alt=""></span>
+			<span data-parallax='{"x": 300, "y": 70}'><img src="assets/images/tsuki.png" alt=""></span>
+			<span data-parallax='{"x": 250, "y": 180, "rotateZ":1500}'><img src="assets/images/corgi.png" alt=""></span>
+			<span data-parallax='{"x": 180, "y": 10, "rotateZ":2000}'><img src="assets/images/fl-shape-10.png" alt=""></span>
+			<span data-parallax='{"x": 250, "y": -30, "rotateX":2000}'><img src="assets/images/fl-shape-8.png" alt=""></span>
+			<span data-parallax='{"x": 60, "y": -100}'><img src="assets/images/unidoge.png" alt=""></span>
+			<span data-parallax='{"x": -30, "y": 150, "rotateZ":1500}'><img src="assets/images/muttinu.png" alt=""></span>
+		</div>
+	</section><!-- about -->
+	<section class="awesome-feature bg-color s-padding" id="feature">
+		<div class="container">
+			<div class="s-title">
+				<h2 class="wow">Dank Features!</h2>
+				<p>We got it all son, everything at the tip of your fingertips</p>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-lg-3">
+					<div class="ovh">
+						<div class="icon-box text-center text-lg-right awf-item  wow slideInUp">
+							<div class="icon-box-icon">
+								<i class="ti-bar-chart"></i>
+							</div>
+							<div class="icon-box-details">
+								<h3 class="icon-box-title">Many Charts</h3>
+								<p>Much Charts! Very wow<br> Dextools? Forget about it</p>
+							</div>
+						</div>
+					</div>
+					<div class="ovh">
+						<div class="icon-box text-center text-lg-right awf-item mb-0 wow slideInUp" data-wow-delay=".1s">
+							<div class="icon-box-icon">
+								<i class="ti-loop"></i>
+							</div>
+							<div class="icon-box-details">
+								<h3 class="icon-box-title">Much swaps!</h3>
+								<p>Uniswap? Forget about it<br> ...maybe not, we will plan to bake the uniswap API right into the app for a snappy response with a native look and feel.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="awesome-feature-img">
+						<img src="assets/images/a-feature-img.png" alt="">
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="ovh">
+						<div class="icon-box text-lg-left text-center awf-item wow slideInUp">
+							<div class="icon-box-icon">
+								<i class="ti-wallet"></i>
+							</div>
+							<div class="icon-box-details">
+								<h3 class="icon-box-title">The Holy Wallet</h3>
+								<p>Wallet for dayzzz, that's what this is all about.<br> MetaMask, CoinBase, TrustWallet? What are those?</p>
+							</div>
+						</div>
+					</div>
+					<div class="ovh">
+						<div class="icon-box text-lg-left text-center awf-item mb-0 wow slideInUp" data-wow-delay=".1s">
+							<div class="icon-box-icon">
+								<i class="ti-package"></i>
+							</div>
+							<div class="icon-box-details">
+								<h3 class="icon-box-title">DApps and shit</h3>
+								<p>Yea we'll add the classical DApps broswer<br> peace</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- awesome-feature -->
+	<section class="app-screenshot s-padding" id="screenshot">
+		<div class="container">
+			<div class="s-title">
+				<h2>App Screenshots</h2>
+				<p>We don't have a designer, these screenshots are fresh out of the oven, we'll update as more screens are available</p>
+			</div>
+			<div class="row app-screenshot-slider-row">
+				<div class="col-12">
+					<div class="swiper-container app-screenshot-slider">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/wallet-view.png" data-rel="lightbox-popup:screenshot"><img src="assets/images/wallet-view.png" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/live-chart-view.png" data-rel="lightbox-popup:screenshot"><img src="assets/images/live-chart-view.png" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/screenshot3.jpg" data-rel="lightbox-popup:screenshot"><img src="assets/images/screenshot3.jpg" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/screenshot4.jpg" data-rel="lightbox-popup:screenshot"><img src="assets/images/screenshot4.jpg" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/screenshot2.jpg" data-rel="lightbox-popup:screenshot"><img src="assets/images/screenshot2.jpg" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/screenshot3.jpg" data-rel="lightbox-popup:screenshot"><img src="assets/images/screenshot3.jpg" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="app-screenshot-item">
+					        		<a href="assets/images/screenshot4.jpg" data-rel="lightbox-popup:screenshot"><img src="assets/images/screenshot4.jpg" alt=""></a>
+					        		<div class="asi-icon-wr"><span class="asi-icon"><i class="icon_plus"></i></span></div>
+					        	</div>
+					        </div>
+					    </div>
+					    <div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- app-screenshot -->
+	
+	<!-- <section class="quick-overview s-padding">
+		<div class="container">
+			<div class="s-title">
+				<h2>Quick Overview</h2>
+				<p>Ut totam hymenaeos a quasi enim, duis erat mollitia, pellentesque ac metus!</p>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="quick-overview-tab-wrapper text-center">
+						<ul class="nav nav-tabs quick-overview-tab" id="overviewtab" role="tablist">
+							<li class="nav-item">
+						    	<a class="nav-link active" id="qa-tab1" data-toggle="tab" href="#qa-tab-content1" role="tab">Best User Experience</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="qa-tab2" data-toggle="tab" href="#qa-tab-content2" role="tab">Simple &amp; Minimal Design</a>
+						  	</li>
+						  	<li class="nav-item">
+						    	<a class="nav-link" id="qa-tab3" data-toggle="tab" href="#qa-tab-content3" role="tab">Super Fast Performance</a>
+						 	</li>
+						 	<li class="nav-item">
+						    	<a class="nav-link" id="qa-tab4" data-toggle="tab" href="#qa-tab-content4" role="tab">Ultra Level Functionality</a>
+						 	</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+						  	<div class="tab-pane fade show active" id="qa-tab-content1" role="tabpanel" aria-labelledby="qa-tab1">
+						  		<div class="row align-items-center">
+						  			<div class="col-lg-5">
+						  				<div class="img-wrapper img-right">
+						  					<img src="assets/images/iphone.png" alt="">
+						  				</div>
+						  			</div>
+						  			<div class="col-lg-5 offset-lg-1">
+						  				<div class="quick-overview-content">
+						  					<div class="quick-overview-content-head">
+						  						<h2>Simple & Minimal Design</h2>
+						  						<p>Optimism ecosystem incubator, compelling philanthropy corporate social responsibility philanthropy social impact impact. think tank framework compassion!</p>
+						  					</div>
+						  					<ul class="iconic-icon-list">
+						  						<li><i class=" arrow_carrot-right"></i> <span>We must stand up the targeted empathetic.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Think tank framework compassion.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Optimism ecosystem incubator compelling.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Optimism ecosystem incubator compelling.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Improve the world justice empower communities.</span></li>
+						  					</ul>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						  	<div class="tab-pane fade" id="qa-tab-content2" role="tabpanel" aria-labelledby="qa-tab2">
+						  		<div class="row align-items-center">
+						  			<div class="col-lg-5">
+						  				<div class="quick-overview-content">
+						  					<div class="quick-overview-content-head">
+						  						<h2>Simple & Minimal Design</h2>
+						  						<p>Optimism ecosystem incubator, compelling philanthropy corporate social responsibility philanthropy social impact impact. think tank framework compassion!</p>
+						  					</div>
+						  					<ul class="iconic-icon-list">
+						  						<li><i class=" arrow_carrot-right"></i> <span>We must stand up the targeted empathetic.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Think tank framework compassion.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Optimism ecosystem incubator compelling.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Optimism ecosystem incubator compelling.</span></li>
+						  					</ul>
+						  				</div>
+						  			</div>
+						  			<div class="col-lg-5 offset-lg-1">
+						  				<div class="img-wrapper">
+						  					<img src="assets/images/iphone.png" alt="">
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						  	<div class="tab-pane fade" id="qa-tab-content3" role="tabpanel" aria-labelledby="qa-tab3">
+						  		<div class="row align-items-center">
+						  			<div class="col-lg-5">
+						  				<div class="img-wrapper img-right">
+						  					<img src="assets/images/iphone.png" alt="">
+						  				</div>
+						  			</div>
+						  			<div class="col-lg-5 offset-lg-1">
+						  				<div class="quick-overview-content">
+						  					<div class="quick-overview-content-head">
+						  						<h2>Simple & Minimal Design</h2>
+						  						<p>Optimism ecosystem incubator, compelling philanthropy corporate social responsibility philanthropy social impact impact. think tank framework compassion!</p>
+						  					</div>
+						  					<ul class="iconic-icon-list">
+						  						<li><i class=" arrow_carrot-right"></i> <span>We must stand up the targeted empathetic.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Think tank framework compassion.</span></li>
+						  						<li><i class=" arrow_carrot-right"></i> <span>Optimism ecosystem incubator compelling.</span></li>
+						  					</ul>
+						  					<div class="btn-wrapper mt-5">
+  												<a href="#" class="btn">LEARN MORE</a>
+  											</div>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						  	<div class="tab-pane fade" id="qa-tab-content4" role="tabpanel" aria-labelledby="qa-tab4">
+						  		<div class="row align-items-center">
+						  			<div class="col-lg-5">
+						  				<div class="img-wrapper img-right">
+						  					<img src="assets/images/iphone.png" alt="">
+						  				</div>
+						  			</div>
+						  			<div class="col-lg-5 offset-lg-1">
+						  				<div class="quick-overview-content">
+						  					<div class="quick-overview-content-head">
+						  						<h2>Simple & Minimal Design</h2>
+						  						<p>Optimism ecosystem incubator, compelling philanthropy corporate social responsibility philanthropy social impact impact. think tank framework compassion!</p>
+						  						<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+						  						<p>Optimism ecosystem incubator, compelling philanthropy corporate social responsibility philanthropy social impact impact. think tank framework compassion!</p>
+						  					</div>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>quick-overview -->
+
+	<section class="h2-pricing s-padding" id="timeline">
+		<div class="container">
+			<div class="s-title">
+				<h2>Timeline</h2>
+				<p>Our work schedule estimate more or less</p>
+			</div>
+			<div class="row no-gutters align-items-center">
+				<div class="col-lg-4">
+					<div class="pricing-table style-2 featured">
+						<div class="pricing-badge">
+							<span class="badge-name">WE ARE HERE</span>
+						</div>
+						<div class="pricing-head">
+							<h2 class="title">2021 Q2</h2>
+							<span class="sub-title">Init Stage - Hello World</span>
+						</div>
+	
+						<div class="pricing-body">
+							<ul>
+								<li><i class="icon_check"></i> Begin App Development</li>
+								<li><i class="icon_check"></i> Launch Website</li>
+								<li><i class="icon_check"></i> Setup Workflow</li>
+								<li><i class="icon_close"></i> Launch Token</li>		
+								<li><i class="icon_close"></i> Find internal testers</li>
+								<li><i class="icon_close"></i> Create All social medias</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="pricing-table style-2">
+					
+						<div class="pricing-head">
+							<h2 class="title">2021 Q3</h2>
+							<span class="sub-title">Oh Snap - Here we go</span>
+						</div>
+					
+						<div class="pricing-body">
+							<ul>			
+								<li><i class="icon_close"></i> Simple Portfolio tracker</li>
+								<li><i class="icon_close"></i> Real-Time Charts</li>
+								<li><i class="icon_close"></i> Meme tokens included</li>
+								<li><i class="icon_close"></i> BSC Chain Support??</li>
+								<li><i class="icon_close"></i> Dark Mode included</li>
+								<li><i class="icon_close"></i> Beta 1 - iOS & Android</li>		
+							</ul>
+						</div>
+					
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="pricing-table style-2">
+						<div class="pricing-head">
+							<h2 class="title">2021 Q4 - 2022 Q1</h2>
+							<span class="sub-title">Damn - Wallets aint easy</span>
+						</div>
+						
+						<div class="pricing-body">
+							<ul>
+								<li><i class="icon_close"></i> Wallet Creation</li>
+								<li><i class="icon_close"></i> Wallet Import</li>
+								<li><i class="icon_close"></i> Multiple Wallets</li>
+								<li><i class="icon_close"></i> Transaction Signin</li>
+								<li><i class="icon_close"></i> Uniswap Integration</li>
+								<li><i class="icon_close"></i> Beta 2 - iOS & Android</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="pricing-table style-2">
+						<div class="pricing-head">
+							<h2 class="title">2022 Q2</h2>
+							<span class="sub-title">Covid 19 - It's been 3 years?</span>
+						</div>
+						
+						<div class="pricing-body">
+							<ul>
+								<li><i class="icon_close"></i> Rigorous testing</li>
+								<li><i class="icon_close"></i> UI refinement</li>
+								<li><i class="icon_close"></i> K9 Wallet Token lottery</li>
+								<li><i class="icon_close"></i> Dank Mode 💩💩💩</li>
+								<li><i class="icon_close"></i> V1 Official Release</li>
+								<li><i class="icon_close"></i> TBA - V2 features</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pricing s-padding" id="token">
+		<div class="container">
+			<div class="s-title">
+				<h2>K9 Wallet Token</h2>
+				<p>Supply: 2,000,000,000</p>
+				<p>Unclaimed jackpot from weekly lottery will get  🔥BURNED🔥</p>
+			</div>
+			<div class="row align-items-center">
+				<div id="chart_div" style="width: 100%; height: 700px" ></div>
+			</div> 
+			
+		</div>
+	</section><!-- pricing -->
+
+	<section class="h7-fun-fact s-padding bg-img bg-1">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="counter-item">
+						
+						<div class="counter-item-count"><span class="counter-count">200</span><span>m</span></div>
+						<h4>Wallets created or imported into K9 Wallet will receive 100 K9WT. Good til supply runs out</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="counter-item">
+						<div class="counter-item-count"><span class="counter-count">250</span><span>m</span></div>
+						<h4>Developers gotta eat, sleep and pay rent and shit</h4>
+					</div>
+				</div>
+			
+				<div class="col-lg-3 col-md-6">
+					<div class="counter-item">
+						
+						<div class="counter-item-count"><span class="counter-count">400</span><span>m</span></div>
+						<h4>Pre-sale for initial investors and to raise liquidy funds</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="counter-item">
+						<div class="counter-item-count"><span class="counter-count">1.15</span><span>B</span></div>
+						<h4>Locked into Liquidity</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="animated-waves">
+			<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="animated-wave">
+	            <title>Wave</title>
+	            <defs></defs>
+	            <path id="animated-wave-three" d=""/>
+	        </svg>
+			<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="animated-wave">
+	            <title>Wave</title>
+	            <defs></defs>
+	            <path id="animated-wave-four" d=""/>
+	        </svg>
+		</div>
+		<div class="f-widget-area">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-lg-2 offset-lg-1 offset-md-1 col-md-5 col-sm-6">
+						<div class="f-widget">
+							<h3 class="f-widget-title">Support</h3>
+							<ul class="f-list">
+								<li><a href="#">Documentation</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Support Forum</a></li>
+						
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 pl-lg-5 col-md-6 col-sm-6">
+						<div class="f-widget">
+							<h3 class="f-widget-title">Company</h3>
+							<ul class="f-list">
+								<li><a href="#">About Us</a></li>
+							
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-0 offset-md-1 col-md-5 col-sm-6">
+						<div class="f-widget">
+							<h3 class="f-widget-title">Contact Info</h3>
+							<ul class="f-contact-list">
+								<li><span>Email Us:</span> dev@k9wallet.com</li>
+							</ul>
+							<ul class="f-contact-list">
+								<li>
+									<span>Follow Us:</span>
+									<ul class="social-profile">
+										<li><a href="#"><i class="social_facebook"></i></a></li>
+										<li><a href="#"><i class="social_twitter"></i></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-copyright-area">
+			<div class="container">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-md-6">
+						<p class="copyright text-center text-md-left mb-2 mb-md-0">© 2021 <a href="#">K9Wallet</a> ALL RIGHTS RESERVED</p>
+					</div>
+					<div class="col-md-6">
+						<ul class="nav f-nav justify-content-md-end justify-content-center">
+							<li class="nav-item">
+							    <a class="nav-link" href="#">ABOUT</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="#">HELP</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="#">CONTACT</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="#">TERMS</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="#">PRIVACY</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- footer -->
+	
+	<div class="scroll-top"><i class="arrow_carrot-up"></i></div>
+	
+
+
+	<script src="assets/js/jquery-2.2.3.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/jquery.events.touch.min.js"></script>
+	<script src="assets/js/lightcase.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/jquery.wavify.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.parallax-scroll.js"></script>
+	<script src="assets/js/particles.min.js"></script>
+	<script src="assets/js/jarallax.min.js"></script>
+	<script src="assets/js/jarallax-video.min.js"></script>
+	<script src="assets/js/form-validator.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</body>
+</html>
