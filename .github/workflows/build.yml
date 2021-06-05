@@ -25,3 +25,19 @@ jobs:
           IMAGE_NAME: 'k9wallet/k9wallet-website'
           TAG_NAME: ${{ env.version }}
           LATEST: 'true'
+  deploy:
+    name: Deploy to cluster
+    runs-on: ubuntu-latest
+    needs: [build-and-push]
+    steps:
+      - uses: actions/checkout@master
+      - name: Deploy to cluster
+        uses: nickgronow/kubectl@master
+        with:
+          config_data: ${{ secrets.KUBE_CONFIG }}
+          args: set image deployment/k9wallet-website-deployment k9wallet-website=k9wallet/k9wallet-website:${{ env.version }} --record
+      - name: Verify deployment
+        uses: nickgronow/kubectl@master
+        with:
+          config_data: ${{ secrets.KUBE_CONFIG }}
+          args: '"rollout status deployment/k9wallet-website-deployment"'
